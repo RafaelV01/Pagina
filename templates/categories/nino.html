@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Bolsos para Niño</title>
+    <link rel="stylesheet" href="/styles/cat.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="/templates/inicio.html">
+                    <img src="/resources/img/logo.png" alt="Logo de la tienda" class="logo">
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="mujer.html">MUJER</a></li>
+                    <li><a href="hombre.html">HOMBRE</a></li>
+                    <li><a href="nina.html">NIÑA</a></li>
+                    <li><a href="nino.html">NIÑO</a></li>
+                    <li><a href="unisex.html">UNISEX</a></li>
+                    <li><a href="mascotas.html">MASCOTAS</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="//index.html" class="login"><i class="fas fa-user"></i></a>
+                <a href="./templates/categories/carrito.html" class="cart"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                <a href="/templates/admin.html" class="options-icon"><i class="fas fa-cog"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <section class="featured-products">
+            <div class="container">
+                <h2 class="h2-view">Bolsos para Niño</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="product" onclick="showProductDetails('Bolso Niño 1', 'Sumérgete en lo divertido de nuestro bolso.', '$80.000', '/resources/img/bolsonino1.webp')">
+                            <img src="/resources/img/bolsonino1.webp" alt="Producto 1">
+                            <h3>Bolso Niño 1</h3>
+                            <p>$80.000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product" onclick="showProductDetails('Bolso Niño 2', 'Sumérgete en lo divertido de nuestro bolso.', '$70.000', '/resources/img/bolsonino2.webp')">
+                            <img src="/resources/img/bolsonino2.webp" alt="Producto 2">
+                            <h3>Bolso Niño 2</h3>
+                            <p>$70.000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product" onclick="showProductDetails('Bolso Niño 3', 'Sumérgete en lo divertido de nuestro bolso.', '$60.000', '/resources/img/bolsonino3.jpg')">
+                            <img src="/resources/img/bolsonino3.jpeg" alt="Producto 3">
+                            <h3>Bolso Niño 3</h3>
+                            <p>$60.000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product" onclick="showProductDetails('Bolso Niño 4', 'Sumérgete en lo divertido de nuestro bolso.', '$90.000', '/resources/img/bolsonino4.jpg')">
+                            <img src="/resources/img/bolsonino4.jpg" alt="Producto 4">
+                            <h3>Bolso Niño 4</h3>
+                            <p>$90.000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product" onclick="showProductDetails('Bolso Niño 5', 'Sumérgete en lo divertido de nuestro bolso.', '$75.000', '/resources/img/bolsonino5.webp')">
+                            <img src="/resources/img/bolsonino5.webp" alt="Producto 5">
+                            <h3>Bolso Niño 5</h3>
+                            <p>$75.000</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="product" onclick="showProductDetails('Bolso Niño 6', 'Sumérgete en lo divertido de nuestro bolso.', '$85.000', '/resources/img/bolsonino6.jpeg')">
+                            <img src="/resources/img/bolsonino6.jpeg" alt="Producto 6">
+                            <h3>Bolso Niño 6</h3>
+                            <p>$85.000</p>
+                        </div>
+                    </div>
+                    <!-- Más productos aquí -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <!-- Aquí se añadirán los indicadores del carrusel -->
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            
+        </ol>
+        <div class="carousel-inner">
+            <!-- Aquí se añadirán las imágenes del carrusel -->
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="/resources/img/bolsonino1.webp" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/resources/img/bolsonino2.webp" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/resources/img/bolsonino3.jpeg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/resources/img/bolsonino4.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/resources/img/bolsonino5.webp" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/resources/img/bolsonino6.jpeg" alt="Second slide">
+            </div>
+            
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Modal de Bootstrap -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel">Nombre del Producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="product-details-img">
+                        <img src="" alt="Imagen del producto" id="modal-product-img" class="img-fluid">
+                    </div>
+                    <h2 id="modal-product-title">Nombre del Producto</h2>
+                    <p id="modal-product-description">Descripción detallada del producto.</p>
+                    <p id="modal-product-price">Precio: $99.99</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="addToCart()">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <section id="somos">
+                <h3>Somos</h3>
+                <p>Somos una tienda web de bolsos llamada 'Bagstyle'.</p>
+            </section>
+            <section id="contacto">
+                <h3>Contacto</h3>
+                <p>Email: referencia.bagstyle@gmail.co</p>
+                <p>Tel: 608 35 71 97 o Cel: 314-895-7684</p>
+            </section>
+            <p>&copy; 2024 Bags Style. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../controllers/script.js"></script>
+    <script>
+        // Función para mostrar los detalles del producto en un modal
+        function showProductDetails(title, description, price, imgSrc) {
+            // Actualiza los detalles del producto con los datos proporcionados
+            document.getElementById('modal-product-title').innerText = title;
+            document.getElementById('modal-product-description').innerText = description;
+            document.getElementById('modal-product-price').innerText = `Precio: ${price}`;
+            document.getElementById('modal-product-img').src = imgSrc;
+
+            // Actualiza el título del modal
+            document.querySelector('.modal-title').innerText = title;
+
+            // Abre el modal
+            $('#productModal').modal('show');
+        }
+    </script>
+</body>
+</html>
